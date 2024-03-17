@@ -20,17 +20,10 @@
         โครงสร้าง
             SELECT column1, column2, ... FROM table_name
             WHERE condition;
-
-    SELECT FROM ORDER BY
-        ใช้เพื่อเลือกข้อมูลแบบเรียงลำดับ
-        โครงสร้าง
-            SELECT column1, column2, ... FROM table_name
-            ORDER BY column1, column2, ... ASC|DESC;
-            // ASC  น้อยไปมาก (default)
-            // DESC มากไปน้อย
+    
 */
 
--- SELECT
+-- SELECT FROM
     SELECT CustomerName, City FROM Customers;
     SELECT * FROM Customers;
 
@@ -46,7 +39,3 @@
     WHERE Country='Mexico';
     SELECT * FROM Customers
     WHERE CustomerID > 80;
-
--- SELECT FROM ORDER BY
-    SELECT * FROM Customers
-    ORDER BY Country ASC, CustomerName DESC;

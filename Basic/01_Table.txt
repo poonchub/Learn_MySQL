@@ -1,5 +1,0 @@
-Database Table
-    PK  PrimaryKey      คีย์ต้องไม่ซ้ำกัน
-    NN  NotNULL         บังคับต้องใส่ข้อมูล
-    AI  AutoIncrement   ลำดับอัตโนมัติ
-    U   Unique          ข้อมูลต้องไม่ซ้ำกัน

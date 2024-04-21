@@ -1,10 +1,11 @@
-create schema myCountry;
+-- CREATE USER 
+create user 'username'@'localhost' identified by 'password';
 
-create table mytable (
-	Province_id VARCHAR(45),
-    Province_Name VARCHAR(100),
-    Population INT,
-    Location TINYTEXT,
-    ProvideSize FLOAT
-);
+-- GRANT 
+grant all privileges on *.* to 'username'@'localhost' with grant option;
 
+-- CHECK USER 
+select host, user from mysql.user;
+
+-- DROP USER 
+drop user 'username'@'localhost';

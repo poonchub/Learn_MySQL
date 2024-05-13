@@ -54,6 +54,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.teacher_dataGridView = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tClear = new System.Windows.Forms.Button();
             this.tDelete = new System.Windows.Forms.Button();
@@ -68,7 +69,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.teacher_dataGridView = new System.Windows.Forms.DataGridView();
             this.Teacher_tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -76,8 +76,8 @@
             this.panel1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.teacher_dataGridView)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // Teacher_tabControl
@@ -389,6 +389,16 @@
             this.panel4.Size = new System.Drawing.Size(487, 216);
             this.panel4.TabIndex = 2;
             // 
+            // teacher_dataGridView
+            // 
+            this.teacher_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.teacher_dataGridView.Location = new System.Drawing.Point(1, 0);
+            this.teacher_dataGridView.Name = "teacher_dataGridView";
+            this.teacher_dataGridView.Size = new System.Drawing.Size(486, 214);
+            this.teacher_dataGridView.TabIndex = 0;
+            this.teacher_dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.teacher_dataGridView_CellClick);
+            this.teacher_dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.teacher_dataGridView_CellContentClick);
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightCyan;
@@ -534,16 +544,6 @@
             this.label8.Text = "Teacher ID";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // teacher_dataGridView
-            // 
-            this.teacher_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.teacher_dataGridView.Location = new System.Drawing.Point(1, 0);
-            this.teacher_dataGridView.Name = "teacher_dataGridView";
-            this.teacher_dataGridView.Size = new System.Drawing.Size(486, 214);
-            this.teacher_dataGridView.TabIndex = 0;
-            this.teacher_dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.teacher_dataGridView_CellClick);
-            this.teacher_dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.teacher_dataGridView_CellContentClick);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -562,9 +562,9 @@
             this.panel1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.teacher_dataGridView)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.teacher_dataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
